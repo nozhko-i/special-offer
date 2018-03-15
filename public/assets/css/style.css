@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box; }
+
+
+
+
+
+.special-offer{
+    border: 2px solid #ccc;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.special-offer__loader{
+    text-align: center;
+}
+
+.special-offer__loader-image{
+    display: inline-block;
+}
+
+.special-offer__thumbnail{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.special-offer__hotel-name{
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    padding: 0;
+}
+
+.special-offer__room-name{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    padding: 0;
+    font-weight: 100;
+}
+
+.special-offer__price{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.special-offer__date-outer{
+    border: 1px solid #ddd;
+}
+
+.special-offer__date-title{
+    background: #fff;
+    text-align: center;
+    display: block;
+    margin: -9px auto auto;
+    width: 70%;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.special-offer__month{
+    text-align: center;
+    font-style: italic;
+    color: #9a9a9a;
+}
+
+.special-offer__day{
+    text-align: center;
+    color: #9a9a9a;
+    font-size: 27px;
+}
+
+.special-offer__person{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.special-offer__person-container{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.special-offer__person-container.special-offer__person-container--adult:before{
+    content: "";
+    background: url("../images/adult.png") no-repeat 0 0;
+    width: 32px;
+    height: 32px;
+    background-size: 100%;
+    display: block;
+    margin: auto;
+}
+
+.special-offer__person-container.special-offer__person-container--child:before{
+    content: "";
+    background: url("../images/baby.png") no-repeat 0 0;
+    width: 32px;
+    height: 32px;
+    background-size: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+/** Grid */
+.special-offer__container{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.special-offer__container:before{
+    content: "";
+    display: table;
+}
+
+.special-offer__container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.special-offer__row:before{
+    content: "";
+    display: table;
+}
+
+.special-offer__row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.special-offer__row{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.special-offer__col{
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.special-offer__col.special-offer__col--wide{
+    width: 100%;
+}
+.special-offer__col.special-offer__col--text-center{
+    text-align: center;
+}
